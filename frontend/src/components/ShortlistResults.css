@@ -1,0 +1,162 @@
+.results-section {
+  margin-top: 0;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.chart-card {
+  margin-bottom: 1.5rem;
+  max-height: 320px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.2s;
+}
+
+.result-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.result-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.result-rank {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.result-name-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.result-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--gray-900);
+}
+
+.result-email {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.result-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.btn-save {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.2rem;
+  transition: transform 0.2s;
+  line-height: 1;
+}
+
+.btn-save:hover {
+  transform: scale(1.2);
+}
+
+.btn-save.saved {
+  color: #f59e0b;
+}
+
+.result-score-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.score-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.result-meta {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  display: flex;
+  gap: 1rem;
+}
+
+.ai-explanation {
+  background: #f5f3ff;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ai-label {
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.ai-strengths,
+.ai-gaps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-interview {
+  background: transparent;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 0.875rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.btn-interview:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.count-badge {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  margin-left: 0.5rem;
+}
